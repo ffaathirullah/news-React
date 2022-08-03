@@ -6,7 +6,9 @@ function Header(props) {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark row-sm-center">
       <div className="container-fluid col-md-10">
         <div className="navbar-brand">
-          <SagaraLogo />
+          <Link to="/">
+            <SagaraLogo />
+          </Link>
         </div>
       </div>
 

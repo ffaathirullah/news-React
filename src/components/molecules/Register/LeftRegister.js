@@ -20,17 +20,15 @@ function LeftRegister() {
     return re.test(email);
   }
 
-  console.log(!validateEmail(email));
-
   const Navigation = () => {
     if (name === "") {
       alert("Belum Ada Nama");
     } else if (lastName === "") {
       alert("Belum Ada lastName");
-    } else if (!validateEmail(email) == true) {
-      alert("Email Tidak Valid");
     } else if (email === "") {
       alert("Belum Ada email");
+    } else if (!validateEmail(email) == true) {
+      alert("Email Tidak Valid");
     } else if (password === "") {
       alert("Belum Ada password");
     } else if (gender === "") {
@@ -40,6 +38,7 @@ function LeftRegister() {
     } else if (kota2 === "") {
       alert("Belum Ada kota");
     } else {
+      localStorage.setItem("user", "holaaa");
       navigate("/news");
     }
   };
