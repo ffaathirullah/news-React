@@ -4,12 +4,12 @@
 }
 
 .news-item {
-    width: 500px;
+    width:22em;
     padding: 20px;
     border: 1px solid;
     margin-bottom: 20px;
 }
 
 .news-img {
-    width: 400px;
+    width: 18em;
 }

@@ -6,7 +6,7 @@ function Header(props) {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark row-sm-center">
       <div className="container-fluid col-md-10">
         <div className="navbar-brand">
-          <Link to="/">
+          <Link to={props.news ? "/news" : "/"}>
             <SagaraLogo />
           </Link>
         </div>
@@ -20,7 +20,7 @@ function Header(props) {
               style={{ width: "8em", marginLeft: "2.5em" }}
               className="btn btn-light"
             >
-              Login
+              {props.news ? "Logout" : "Login"}
             </button>
           </Link>
         )}

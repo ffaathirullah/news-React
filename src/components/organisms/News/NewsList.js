@@ -8,7 +8,7 @@ const NewsList = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        `https://newsapi.org/v2/everything?q=football&apiKey=8e6778eef74d4e3da39e430ce3cd0899`
+        `https://newsapi.org/v2/everything?q=technology&apiKey=8e6778eef74d4e3da39e430ce3cd0899`
       );
       setArticles(response.data.articles);
     };
@@ -17,23 +17,23 @@ const NewsList = () => {
   }, []);
   return (
     <div>
-      <div className="d-flex justify-content-center align-self-center">
+      <div className="d-flex justify-content-center align-self-center mb-5 mt-2">
         <h1>Today News :</h1>
       </div>
-      {articles.map((article) => {
-        return (
-          <>
-            <div className="d-flex justify-content-center">
+      <div className="d-flex mx-2 row justify-content-center">
+        {articles.map((article) => {
+          return (
+            <>
               <NewsItem
                 title={article.title}
                 description={article.description}
                 url={article.url}
                 urlToImage={article.urlToImage}
               />
-            </div>
-          </>
-        );
-      })}
+            </>
+          );
+        })}
+      </div>
     </div>
   );
 };

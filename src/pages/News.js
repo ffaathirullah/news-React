@@ -6,7 +6,7 @@ import NewsList from "../components/organisms/News/NewsList";
 function News() {
   return (
     <>
-      <Header />
+      <Header registrasi news />
       <NewsList />
       <Footer />
     </>
