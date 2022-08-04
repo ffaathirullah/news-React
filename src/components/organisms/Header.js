@@ -1,18 +1,20 @@
 import React from "react";
 import { SagaraLogo } from "../../images/icons";
 import { Link } from "react-router-dom";
+import "./Header.css";
+
 function Header(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark row-sm-center">
       <div className="container-fluid col-md-10">
-        <div className="navbar-brand">
+        <div className="SagaraBrand navbar-brand">
           <Link to={props.news ? "/news" : "/"}>
             <SagaraLogo />
           </Link>
         </div>
       </div>
 
-      <div className="col-md-2">
+      <div className="loginLogout col-md-2">
         {props.registrasi && (
           <Link to="/login">
             <button

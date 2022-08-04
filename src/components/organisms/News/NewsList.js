@@ -20,7 +20,7 @@ const NewsList = () => {
       <div className="d-flex justify-content-center align-self-center mb-5 mt-2">
         <h1>Today News :</h1>
       </div>
-      <div className="d-flex mx-2 row justify-content-center">
+      <div className="d-flex mx-3 row justify-content-center">
         {articles.map((article) => {
           return (
             <>
