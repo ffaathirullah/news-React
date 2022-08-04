@@ -10,7 +10,7 @@ const NewsList = () => {
   useEffect(() => {
     const getArticles = async () => {
       const response = await axios.get(
-        `https://newsapi.org/v2/everything?q=technology&apiKey=8e6778eef74d4e3da39e430ce3cd0899`
+        `https://newsapi.org/v2/everything?q=football&apiKey=8e6778eef74d4e3da39e430ce3cd0899`
       );
       setArticles(response.data.articles);
     };

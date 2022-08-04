@@ -6,21 +6,17 @@ export default function DetailsBlogs(props) {
       <div className="mx-5 my-5 mt-5 me-5 ms-5 px-5 ps-5 pe-5 pt-3">
         <div>
           {/* bagian atas */}
-          <h1 className="mt-5 d-flex justify-content-center">{props.title}</h1>
+          <h1 className="mt-5 d-flex justify-content-center">
+            {props.title ? props.title : "Tidak Dapat memuat Title"}
+          </h1>
           <p
             className="my-4 d-flex justify-content-center fw-light"
             style={{ fontSize: "0.9em" }}
           >
-            {props.time}
+            {props.time ? props.time : "Tidak Dapat memuat Waktu"}
           </p>
           {/* image */}
           <div className="d-flex justify-content-center mt-4">
-            {/* <Image
-              src="/images/detailBlog.png"
-              alt="Picture of the author"
-              width="500em"
-              height="300em"
-            /> */}
             <img
               className="news-img"
               src={props.urlToImage}
@@ -32,15 +28,25 @@ export default function DetailsBlogs(props) {
           {/* bagian pertama */}
           <div className="d-flex justify-content-center mt-5">
             <div>
-              <p>{props.description}</p>
-              <p>{props.description}</p>
+              <p>
+                {props.description
+                  ? props.description
+                  : "Tidak Dapat memuat Description"}
+              </p>
+              <p>
+                {props.description
+                  ? props.description
+                  : "Tidak Dapat memuat Description"}
+              </p>
             </div>
           </div>
           {/* bagian ke 5 */}
           <div className="d-flex justify-content-center mt-3">
             <div>
               <h3>Content : </h3>
-              <p>{props.content}</p>
+              <p>
+                {props.content ? props.content : "Tidak Dapat memuat Content"}
+              </p>
             </div>
           </div>
           {/* post */}
