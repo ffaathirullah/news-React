@@ -1,13 +1,13 @@
 import React from "react";
 import Footer from "../components/organisms/Footer";
 import Header from "../components/organisms/Header";
-import FormRegister from "../components/organisms/Register/FormRegister";
+import NewsList from "../components/organisms/News/NewsList";
 
 function News() {
   return (
     <>
       <Header />
-      {/* <FormRegister /> */}
+      <NewsList />
       <Footer />
     </>
   );
